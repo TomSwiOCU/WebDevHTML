@@ -1,100 +1,105 @@
-/* Global Styles */
+/* =======================================
+   GLOBAL THEME STYLES
+   ======================================= */
+
 body {
-    background-color: #0a1f44;
-    color: #ffffff;
+    background-color: #0a1f44;   /* Dark navy background */
+    color: #ffffff;              /* White text for contrast */
     font-family: Arial, sans-serif;
-    margin: 0;
 }
 
-/* Navigation */
+
+/* =======================================
+   HEADER & FOOTER
+   ======================================= */
+
+header,
+footer {
+    background-color: #081733;   /* Slightly darker navy */
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+
+/* =======================================
+   NAVIGATION CUSTOMIZATION
+   (Bootstrap buttons are doing most styling)
+   ======================================= */
+
 nav {
-    text-align: center;
-    padding: 15px;
-    background-color: #081733;
+    background-color: transparent;
 }
 
-nav a {
-    color: #4da6ff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+
+/* =======================================
+   CARD CUSTOMIZATION
+   ======================================= */
+
+.card {
+    border-radius: 12px;
+    border: none;
 }
 
-nav a:hover {
-    color: #80c1ff;
+.card-title {
+    font-weight: 600;
 }
 
-/* Headers */
-header {
-    text-align: center;
-    padding: 20px;
-}
 
-h2 {
-    text-align: center;
-    margin-top: 30px;
-}
+/* =======================================
+   IMAGE CUSTOMIZATION
+   ======================================= */
 
-p {
-    text-align: center;
-    max-width: 800px;
-    margin: 10px auto;
-    line-height: 1.6;
-}
-
-/* Image */
-.responsive-img {
-    display: block;
-    margin: 20px auto;
-    width: 500px;
+img {
     max-width: 100%;
 }
 
-/* Flexbox Layout */
-.flex-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
+img.rounded {
+    border-radius: 12px;
 }
 
-.flex-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    width: 40%;
+
+/* =======================================
+   CUSTOM SPACING ENHANCEMENTS
+   (Bootstrap handles most spacing)
+   ======================================= */
+
+section {
+    margin-bottom: 40px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #081733;
-    margin-top: 40px;
+
+/* =======================================
+   ACCESSIBILITY IMPROVEMENTS
+   ======================================= */
+
+/* Improve link contrast */
+a {
+    color: #4da6ff;
 }
 
-/* ========================= */
-/* Responsive Media Query    */
-/* ========================= */
+a:hover {
+    color: #80c1ff;
+}
+
+
+/* =======================================
+   RESPONSIVE TWEAKS
+   ======================================= */
 
 @media (max-width: 768px) {
 
     body {
         font-size: 16px;
-        padding: 10px;
     }
 
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
+    header h1 {
+        font-size: 1.8rem;
     }
 
-    .flex-item {
-        width: 90%;
-    }
-
-    .responsive-img {
-        width: 100%;
-        height: auto;
-    }
 }
