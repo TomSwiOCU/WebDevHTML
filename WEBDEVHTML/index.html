@@ -4,77 +4,80 @@
     <meta charset="UTF-8">
     <title>Productivity Habits for College Students</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN (MUST be above style.css) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Page Header -->
-    <header>
-        <h1>Productivity Habits for College Students</h1>
-    </header>
+<header class="text-center py-4">
+    <h1>Productivity Habits for College Students</h1>
+</header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="page2.html">Learn more about time management strategies</a>
-    </nav>
+<nav class="text-center mb-4">
+    <a href="index.html" class="btn btn-outline-light me-2">Home</a>
+    <a href="page2.html" class="btn btn-primary">Time Management Tips</a>
+</nav>
 
-    <!-- Main Content -->
-    <main>
+<main class="container">
 
-        <!-- Section 1 -->
-        <section>
-            <h2>Why Productivity Matters</h2>
-            <p>
-                College students manage classes, assignments, jobs, and social responsibilities.
-                Building strong productivity habits helps reduce stress and improve academic success.
-            </p>
+    <section class="mb-5">
+        <h2 class="text-center mb-3">Why Productivity Matters</h2>
 
-            <p>
-                Productivity is about working smarter, setting priorities, and creating
-                routines that support long-term goals.
-            </p>
+        <p class="lead text-center">
+            College students manage classes, work, and personal responsibilities.
+            Building strong productivity habits reduces stress and improves success.
+        </p>
 
-            <img src="images/study.jpg"
-     alt="College student studying at a library table surrounded by bookshelves"
-     class="responsive-img">
+        <img src="images/student-library.jpg"
+             alt="College student studying at a library table surrounded by bookshelves"
+             class="img-fluid rounded shadow mx-auto d-block">
+    </section>
 
-        </section>
+    <section>
+        <h2 class="text-center mb-4">Daily and Weekly Habits</h2>
 
-        <!-- Flexbox Section -->
-        <section>
-            <h2>Daily and Weekly Habits</h2>
+        <!-- Bootstrap Grid (Replaces Flexbox) -->
+        <div class="row">
 
-            <div class="flex-container">
-
-                <div class="flex-item">
-                    <h3>Daily Habits</h3>
-                    <ul>
-                        <li>Create a to-do list</li>
-                        <li>Study in distraction-free spaces</li>
-                        <li>Take scheduled breaks</li>
-                    </ul>
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Daily Habits</h3>
+                        <ul>
+                            <li>Create a to-do list</li>
+                            <li>Study distraction-free</li>
+                            <li>Take scheduled breaks</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="flex-item">
-                    <h3>Weekly Habits</h3>
-                    <ol>
-                        <li>Plan assignments ahead of time</li>
-                        <li>Review lecture notes</li>
-                        <li>Set academic goals</li>
-                    </ol>
-                </div>
-
             </div>
-        </section>
 
-    </main>
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Weekly Habits</h3>
+                        <ol>
+                            <li>Plan assignments</li>
+                            <li>Review lecture notes</li>
+                            <li>Set academic goals</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Productivity Website</p>
-    </footer>
+        </div>
+    </section>
+
+</main>
+
+<footer class="text-center py-4 mt-5">
+    <p>&copy; 2026 Productivity Website</p>
+</footer>
 
 </body>
 </html>
