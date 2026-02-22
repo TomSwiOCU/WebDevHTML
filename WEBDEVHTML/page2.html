@@ -4,61 +4,78 @@
     <meta charset="UTF-8">
     <title>Time Management Tips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Page Header -->
-    <header>
-        <h1>Time Management Tips for Students</h1>
-    </header>
+<header class="text-center py-4">
+    <h1>Time Management Tips for Students</h1>
+</header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Return to the Productivity Homepage</a>
-        <a href="page2.html">Time Management Tips</a>
-    </nav>
+<nav class="text-center mb-4">
+    <a href="index.html" class="btn btn-primary me-2">Back to Homepage</a>
+    <a href="page2.html" class="btn btn-outline-light">Time Management</a>
+</nav>
 
-    <!-- Main Content -->
-    <main>
+<main class="container">
 
-        <section>
-            <h2>Why Time Management Is Important</h2>
-            <p>
-                Effective time management helps students balance school,
-                work, and personal life responsibilities.
-            </p>
+    <section class="mb-5">
+        <h2 class="text-center mb-3">Why Time Management Is Important</h2>
 
-            <p>
-                Planning ahead prevents last-minute stress and improves overall
-                academic performance.
-            </p>
-        </section>
+        <p class="text-center">
+            Effective time management helps students balance school,
+            work, and personal life responsibilities.
+        </p>
 
-        <section>
-            <h2>Helpful Planning Tools</h2>
+        <p class="text-center">
+            Planning ahead prevents last-minute stress and improves academic performance.
+        </p>
+    </section>
 
-            <ul>
-                <li>Digital calendars</li>
-                <li>Weekly planners</li>
-                <li>Task management apps</li>
-            </ul>
+    <section>
+        <h2 class="text-center mb-4">Helpful Planning Tools</h2>
 
-            <ol>
-                <li>List all assignments and deadlines</li>
-                <li>Estimate how long tasks will take</li>
-                <li>Schedule time blocks</li>
-            </ol>
+        <div class="row">
 
-        </section>
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white h-100">
+                    <div class="card-body">
+                        <ul>
+                            <li>Digital calendars</li>
+                            <li>Weekly planners</li>
+                            <li>Task management apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-    </main>
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white h-100">
+                    <div class="card-body">
+                        <ol>
+                            <li>List all assignments</li>
+                            <li>Estimate time needed</li>
+                            <li>Schedule time blocks</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Productivity Website</p>
-    </footer>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="text-center py-4 mt-5">
+    <p>&copy; 2026 Productivity Website</p>
+</footer>
 
 </body>
 </html>
